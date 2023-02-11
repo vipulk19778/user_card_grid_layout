@@ -1,16 +1,16 @@
-#This website is live on [User Grid Layout](https://user-card-grid-layout.netlify.app/).
+# This website is live on [User Grid Layout](https://user-card-grid-layout.netlify.app/).
 
-##I have used Context Api so that I don't have to use prop drilling again and again.
+## I have used Context Api so that I don't have to use prop drilling again and again.
 
-##I have used separate components for navbar and card.
+## I have used separate components for navbar and card.
 
-##I have used custom CSS.
+## I have used custom CSS.
 
-##I have used separate styles for navbar and card so that there won't be any problem in debugging in future.
+## I have used separate styles for navbar and card so that there won't be any problem in debugging in future.
 
-##I tried to make this website responsive as much as possible.
+## I tried to make this website responsive as much as possible.
 
-##I completed this website in approx. 3 hours.
+## I completed this website in approx. 3 hours.
 
 
 # Getting Started with Create React App
