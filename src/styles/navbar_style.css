@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ededed;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 8rem;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  z-index: 2;
+}
+
+.header {
+  color: black;
+  background-color: white;
+  padding: 10px 0 10px 0;
+  position: absolute;
+  left: 2%;
+  top: 1%;
+}
+
+.getUsers {
+  position: absolute;
+  right: 25px;
+  top: 40px;
+  border: none;
+  background: crimson;
+  color: white;
+  border-radius: 25px;
+  padding: 10px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.getUsers:hover {
+  transform: scale(1.05);
+}
+
+/*---------- Media Query ----------- */
+
+@media only screen and (max-width: 468px) {
+  .header {
+    font-size: 20px;
+    top: -2%;
+    left: 5%;
+  }
+
+  .getUsers {
+    width: 100px;
+    height: 35px;
+  }
+}

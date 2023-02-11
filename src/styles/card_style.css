@@ -1,0 +1,121 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 26%;
+  height: 30vh;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  color: rgb(87, 82, 82);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-main:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.3);
+}
+
+.avatar-container img {
+  width: 40%;
+  height: 30vh;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.name {
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  font-size: 1.5vw;
+}
+
+.email {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  font-size: 1.3vw;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+}
+
+/*---------- Media Query----------- */
+
+@media only screen and (max-width: 468px) {
+  .card-main {
+    flex-basis: 60%;
+    height: 50vh;
+    position: relative;
+  }
+
+  .avatar-container img {
+    width: 60%;
+    height: 30vh;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    position: absolute;
+    left: 20%;
+    top: 5%;
+  }
+
+  .name {
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    font-size: 3vw;
+  }
+
+  .email {
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 468px) and (max-width: 768px) {
+  .card-main {
+    flex-basis: 40%;
+    height: 52vh;
+    position: relative;
+  }
+
+  .avatar-container img {
+    width: 60%;
+    height: 30vh;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    position: absolute;
+    left: 20%;
+    top: 5%;
+  }
+
+  .name {
+    position: absolute;
+    left: 20%;
+    top: 68%;
+    font-size: 2.5vw;
+  }
+
+  .email {
+    position: absolute;
+    left: 20%;
+    top: 78%;
+    font-size: 2.5vw;
+  }
+}
